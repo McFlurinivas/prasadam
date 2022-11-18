@@ -22,17 +22,11 @@
         motion:constraintSetStart="@+id/start"
         motion:constraintSetEnd="@+id/end"
         motion:autoTransition="animateToEnd"
-        motion:duration="1000">
+        motion:duration="2000">
         <KeyFrameSet >
             <KeyAttribute
                 motion:motionTarget="@+id/imageView"
-                motion:framePosition="20"
-                android:alpha="0.5"
-                android:scaleX="10"
-                android:scaleY="10" />
-            <KeyAttribute
-                motion:motionTarget="@+id/imageView"
-                motion:framePosition="50"
+                motion:framePosition="90"
                 android:alpha="0.5"
                 android:scaleX="20"
                 android:scaleY="20" />
