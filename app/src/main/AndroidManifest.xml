@@ -35,9 +35,10 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+
         <meta-data
-            android:name="com.google.android.geo_API_KEY"
-            android:value="${MAPS_API_KEY}" />
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
 
         <activity
             android:name=".MainActivity"
@@ -46,7 +47,12 @@
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
+
         </activity>
+        <activity
+            android:name =".MainScreen"
+            android:label="OnBoarding Maker"
+            />
     </application>
 
 </manifest>
