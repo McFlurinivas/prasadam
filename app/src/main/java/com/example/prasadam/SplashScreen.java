@@ -31,7 +31,7 @@ public class SplashScreen extends AppCompatActivity {
             public void onTransitionCompleted(MotionLayout motionLayout, int currentId) {
                 Toast.makeText(SplashScreen.this, "Splash Screen Over", Toast.LENGTH_LONG).show();
                 Intent i;
-                i = new Intent(SplashScreen.this, MainActivity.class);
+                i = new Intent(SplashScreen.this, Temples.class);
                 startActivity(i);
             }
 
