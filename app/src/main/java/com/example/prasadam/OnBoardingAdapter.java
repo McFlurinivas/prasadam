@@ -17,10 +17,10 @@ public class OnBoardingAdapter extends PagerAdapter {
 
     int[] images = {
 
-            R.drawable.image1,
-            R.drawable.image2,
-            R.drawable.image3,
-            R.drawable.image4
+            R.drawable.welcomepage,
+            R.drawable.secondpage,
+            R.drawable.thirdpage,
+            R.drawable.fourthpage
 
     };
 

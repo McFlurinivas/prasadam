@@ -10,10 +10,10 @@
 
     <ImageView
         android:id="@+id/titleImage"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="396dp"
+        android:layout_height="489dp"
         android:layout_marginTop="10dp"
-        android:src="@drawable/image1"/>
+        android:src="@drawable/thirdpage" />
 
     <TextView
         android:id="@+id/texttitle"
