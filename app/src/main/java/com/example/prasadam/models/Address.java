@@ -1,5 +1,7 @@
 package com.example.prasadam.models;
 
+import androidx.annotation.NonNull;
+
 public class Address {
     public Address(
         String streetAddress0, String streetAddress1, String city, int pinCode, String state
@@ -11,14 +13,14 @@ public class Address {
         this.pinCode = pinCode;
     }
 
+    @NonNull
     @Override
     public String toString() {
-        String r = streetAddress0;
+        return streetAddress0;
+
     }
 
-    public String getStreetAddress0() {
-        return streetAddress0;
-    }
+    public String getStreetAddress0() { return streetAddress0; }
 
     public String getStreetAddress1() {
         return streetAddress1;

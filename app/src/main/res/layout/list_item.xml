@@ -12,28 +12,19 @@
     app:cardPreventCornerOverlap="true"
     app:cardUseCompatPadding="true">
 
-        <LinearLayout
-            android:id="@+id/background"
-            android:layout_width="wrap_content"
-            android:layout_height="176dp"
-            android:adjustViewBounds="true"
-            android:alpha="0.0"
-            android:background="@drawable/temple"
-            android:scaleType="centerInside"
-            tools:ignore="Orientation">
-
-        </LinearLayout>
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="177dp">
 
                 <ImageView
                     android:id="@+id/templeImage"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
                     android:layout_margin="10dp"
                     android:contentDescription="@string/app_name"
                     android:padding="5dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
                     android:src="@drawable/shreeabhisthamaharajaganapathitemple" />
 
                 <!-- Text View to display Course Name -->
@@ -66,7 +57,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:textColor="@color/black"
-                            android:text="12-522, 17th A Cross Rd, Muneswara Nagar, Sector 6, HSR Layout, Bengaluru, Karnataka 560068" />
+                            android:text="HSR Layout, Bengaluru, Karnataka 560068" />
 
                         <ImageView
                             android:layout_width="20dp"

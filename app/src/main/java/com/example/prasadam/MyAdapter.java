@@ -10,16 +10,16 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.ArrayList;
+import com.example.prasadam.models.Temple;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     Context context;
-    ArrayList<templesList> templesArrayList;
+    Temple[] temples;
 
-    public MyAdapter(Context context, ArrayList<templesList> templesArrayList) {
+    public MyAdapter(Context context, Temple[] temples) {
         this.context = context;
-        this.templesArrayList = templesArrayList;
+        this.temples = temples;
     }
 
     @NonNull
@@ -33,17 +33,17 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull MyAdapter.MyViewHolder holder, int position) {
-        templesList temples = templesArrayList.get(position);
-        holder.templeName.setText(temples.templeName);
-        holder.templeTime.setText(temples.templeTime);
-        holder.templeLocation.setText(temples.templeLocation);
-        holder.templeDistance.setText(temples.templeDistance);
-        holder.templeImage.setImageResource(temples.templeImage);
+        Temple temple = temples[position];
+        holder.templeName.setText(temple.templeName);
+        holder.templeTime.setText(temple.templeTime);
+        holder.templeLocation.setText(temple.templeLocation);
+        holder.templeDistance.setText(temple.templeDistance);
+        holder.templeImage.setImageResource(temple.templeImage);
     }
 
     @Override
     public int getItemCount() {
-        return templesArrayList.size();
+        return temples.length;
     }
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
