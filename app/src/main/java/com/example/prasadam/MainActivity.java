@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.text.HtmlCompat;
 import androidx.viewpager.widget.ViewPager;
 
-public class MainActivity extends AppCompatActivity {
+import com.example.prasadam.databinding.ActivityMainBinding;
 
     ViewPager mSLideViewPager;
     LinearLayout mDotLayout;
@@ -137,7 +137,9 @@ public class MainActivity extends AppCompatActivity {
     };
     //Get current Item id for the slides
     private int getitem(int i){
-
         return mSLideViewPager.getCurrentItem() + i;
     }
+
+
+    private ActivityMainBinding binding = null;
 }
