@@ -13,7 +13,7 @@ import androidx.core.text.HtmlCompat;
 import androidx.viewpager.widget.ViewPager;
 
 import com.example.prasadam.databinding.ActivityMainBinding;
-
+public class MainActivity extends AppCompatActivity {
     ViewPager mSLideViewPager;
     LinearLayout mDotLayout;
     Button backbtn, nextbtn, skipbtn;
