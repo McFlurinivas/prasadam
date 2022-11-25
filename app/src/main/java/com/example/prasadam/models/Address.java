@@ -17,7 +17,10 @@ public class Address implements Serializable {
     @NonNull
     @Override
     public String toString() {
-        return streetAddress0;
+        return streetAddress0 + ","
+            + "\n" + streetAddress1 + ","
+            + "\n" + city + " - " + pinCode + ","
+            + "\n" + state;
 
     }
 
