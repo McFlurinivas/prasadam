@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(MainActivity.this,"MainActivity",Toast.LENGTH_LONG).show();
         //sharedPreference implements
         sharedPreferences = getSharedPreferences(shared_preference_name,MODE_PRIVATE);
-        if(sharedPreferences.getString(shared_preference_firstTime,"False") !="False") {
+        if(sharedPreferences.getString(shared_preference_firstTime,"False") =="False") {
             Intent i = new Intent(MainActivity.this,ProcessInddicatorActivity.class);
             startActivity(i);
             finish();

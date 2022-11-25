@@ -26,7 +26,7 @@ public class ProcessInddicatorActivity extends AppCompatActivity {
                 Intent intent = new Intent(ProcessInddicatorActivity.this,PickReligionActivity.class);
                 startActivity(intent);
             }
-        },30000);
+        },2000);
     }
 
 }

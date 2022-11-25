@@ -26,7 +26,7 @@ public class LottieAnimationActivity extends AppCompatActivity {
                 Intent intent = new Intent(LottieAnimationActivity.this,MainActivity.class);
                 startActivity(intent);
             }
-        },1000);
+        },4000);
 
     }
 }
