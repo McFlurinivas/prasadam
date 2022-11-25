@@ -1,6 +1,8 @@
 package com.example.prasadam.models;
 
-public class Temple {
+import java.io.Serializable;
+
+public class Temple implements Serializable {
     public final String templeName;
     public final Address address;
     public final String mapId;
