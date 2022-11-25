@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.text.HtmlCompat;
@@ -34,10 +35,11 @@ public class MainActivity extends AppCompatActivity {
         backbtn = findViewById(R.id.backbtn);
         nextbtn = findViewById(R.id.nextbtn);
         skipbtn = findViewById(R.id.skipButton);
+        Toast.makeText(MainActivity.this,"MainActivity",Toast.LENGTH_LONG).show();
         //sharedPreference implements
         sharedPreferences = getSharedPreferences(shared_preference_name,MODE_PRIVATE);
-        if(sharedPreferences.getString(shared_preference_firstTime,null) !=null) {
-            Intent i = new Intent(MainActivity.this,MainScreen.class);
+        if(sharedPreferences.getString(shared_preference_firstTime,"False") !="False") {
+            Intent i = new Intent(MainActivity.this,ProcessInddicatorActivity.class);
             startActivity(i);
             finish();
         }
@@ -60,24 +62,20 @@ public class MainActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 editor.putString(shared_preference_firstTime,"True");
                 editor.apply();
-                Intent i = new Intent(MainActivity.this,MainScreen.class);
+                Intent i = new Intent(MainActivity.this,ProcessInddicatorActivity.class);
                 startActivity(i);
                 finish();
 
             }
-
         });
         // Skiping all onboarding Screen
         skipbtn.setOnClickListener(v -> {
 
-            Intent i = new Intent(MainActivity.this,MainScreen.class);
+            Intent i = new Intent(MainActivity.this,ProcessInddicatorActivity.class);
             startActivity(i);
             finish();
 
         });
-
-
-
         mSLideViewPager = (ViewPager) findViewById(R.id.slideViewPager);
         mDotLayout = (LinearLayout) findViewById(R.id.indicator_layout);
 
