@@ -1,8 +1,9 @@
 package com.example.prasadam.models;
 
 import androidx.annotation.NonNull;
+import java.io.Serializable;
 
-public class Address {
+public class Address implements Serializable {
     public Address(
         String streetAddress0, String streetAddress1, String city, int pinCode, String state
     ) {
